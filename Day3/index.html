@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>periodic_table</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .outer {
+            width: 95%;
+            height: 625px;
+            /* border: 2px solid red; */
+            padding-left: 50px;
+
+        }
+
+        #heading {
+            text-align: center;
+            height: 10%;
+            width: 100%;
+            /* border: 2px solid rgb(255, 217, 0); */
+
+        }
+
+        p {
+            margin-top: 30px;
+            font-size: 27px;
+        }
+
+        .inner1 {
+            height: 60%;
+            width: 100%;
+            /* border: 2px solid rgb(0, 0, 0); */
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+
+        }
+
+        .inner2 {
+            height: 30%;
+            /* width: 100%; */
+            width: 73.3%;
+            /* border: 2px solid rgb(8, 27, 242); */
+            display: table;
+            padding-left: 26.5%;
+            padding-top: 30px;
+
+        }
+
+        .firstcolumn {
+            width: 36px;
+            height: 36px;
+            background-color: #89a02c;
+            border: 2px solid black;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+
+        .secondcolumn {
+            width: 36px;
+            height: 36px;
+            background-color: #ff5555;
+            border: 2px solid black;
+            margin: 10px;
+            
+        }
+
+        .thirdcolumn {
+            width: 36px;
+            height: 36px;
+            background-color: #ffe7d5;
+            border: 4px solid black;
+            margin: 10px;
+        }
+
+        #boxsize {
+            display: table;
+        }
+
+        #table1 {
+            display: flex;
+            width: 20%;
+            /* border: 5px solid rgb(132, 0, 22); */
+            align-items: flex-end;
+            text-align: center;
+        
+        }
+
+        #table2 {
+            display: flex;
+            width: 35%;
+            /* border: 5px solid rgb(132, 0, 22); */
+            align-items: flex-end;
+        }
+
+        .row1,
+        .row2,
+        .row3,
+        .row4 {
+            width: 36px;
+            height: 36px;
+            border: 2px solid black;
+            background-color: blue;
+            margin: 10px;
+        }
+
+        .middle {
+            display: table;
+            width: 45%;
+            /* border: 5px solid rgb(22, 132, 0); */
+        }
+
+        .rowmiddle {
+            display: flex;
+        }
+
+        .si {
+            width: 119px;
+            height: 119px;
+            background-color: #89a02c;
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        .forthcolumn {
+            width: 36px;
+            height: 36px;
+            background-color: rgb(235, 80, 66);
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        .fifthcolumn {
+            width: 36px;
+            height: 36px;
+            background-color: #f5367f;
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        .sixthcolumn {
+            width: 36px;
+            height: 36px;
+            background-color: #fecd00;
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        .thirdcolumn1 {
+            width: 36px;
+            height: 36px;
+            background-color: rgb(9, 114, 179);
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        .firstline {
+            width: 36px;
+            height: 36px;
+            background-color: #47582e;
+            border: 1px solid black;
+        }
+
+        .secondline {
+            width: 36px;
+            height: 36px;
+            background-color: #95bc5f;
+            border: 1px solid black;
+        }
+
+        .index2row1,
+        .index2row2 {
+            display: flex;
+        }
+        .orange{
+            background-color: #ff6600;
+        }
+        .voilet{
+            background-color: #aa0087;
+        }
+        .brown{
+            background-color: #6d535e;
+        }
+        .green{
+            background-color: #5aa02c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer">
+        <div id="heading">
+            <p>THE PERIODIC TABLE OF ELEMENTS</p>
+        </div>
+        <div class="inner1">
+            <div id="table1" style="justify-content: end;">
+                <div id="boxsize">
+                    <div class="firstcolumn" style="background-color: #aa0100;">H</div>
+                    <div class="firstcolumn"></div>
+                    <div class="firstcolumn"></div>
+                    <div class="firstcolumn"></div>
+                    <div class="firstcolumn"></div>
+                    <div class="firstcolumn"></div>
+                    <div class="firstcolumn"></div>
+                </div>
+                <div class="boxsize">
+                    <div class="secondcolumn"><div style="padding: 8px;">4</div></div>
+                    <div class="secondcolumn"><div style="padding: 8px;">12</div></div>
+                    <div class="secondcolumn"><div style="padding: 8px;">20</div></div>
+                    <div class="secondcolumn"><div style="padding: 8px;">38</div></div>
+                    <div class="secondcolumn"><div style="padding: 8px;">56</div></div>
+                    <div class="secondcolumn"><div style="padding: 8px;">88</div></div>
+                </div>
+                <div class="boxsize">
+                    <div class="thirdcolumn"></div>
+                    <div class="thirdcolumn"></div>
+                </div>
+            </div>
+
+
+            <!-- middle ke liy -->
+            <div class="middle">
+                <div class="si">
+                    <div style="margin: 8px; text-align: right;">14</div>
+                    <div style="font-size: 45px; margin: 6px;">Si</div>
+                    <div style="margin: 6px;">Silicon</div>
+                </div>
+                <div class="rowmiddle">
+                    <div class="row1"></div>
+                    <div class="row1"></div>
+                    <div class="row1"></div>
+                    <div class="row1"></div>
+                    <div class="row1"></div>
+                    <div class="row1"></div>
+                    <div class="row1"></div>
+                    <div class="row1"></div>
+                    <div class="row1"></div>
+                </div>
+                <div class="rowmiddle">
+                    <div class="row2"></div>
+                    <div class="row2"></div>
+                    <div class="row2"></div>
+                    <div class="row2"></div>
+                    <div class="row2"></div>
+                    <div class="row2"></div>
+                    <div class="row2"></div>
+                    <div class="row2"></div>
+                    <div class="row2"></div>
+                </div>
+                <div class="rowmiddle">
+                    <div class="row3"></div>
+                    <div class="row3"></div>
+                    <div class="row3"></div>
+                    <div class="row3"></div>
+                    <div class="row3"></div>
+                    <div class="row3"></div>
+                    <div class="row3"></div>
+                    <div class="row3"></div>
+                    <div class="row3"></div>
+                </div>
+                <div class="rowmiddle">
+                    <div class="row4"></div>
+                    <div class="row4"></div>
+                    <div class="row4"></div>
+                    <div class="row4"></div>
+                    <div class="row4"></div>
+                    <div class="row4"></div>
+                    <div class="row4"></div>
+                    <div class="row4"></div>
+                    <div class="row4"></div>
+                </div>
+
+            </div>
+
+
+
+            <div id="table2">
+                <div id="boxsize">
+                    <div class="firstcolumn voilet"></div>
+                    <div class="firstcolumn orange"></div>
+                    <div class="firstcolumn orange"></div>
+                    <div class="firstcolumn orange"></div>
+                    <div class="firstcolumn orange"></div>
+                    <div class="firstcolumn brown"></div>
+                </div>
+                <div class="boxsize">
+                    <div class="secondcolumn green"></div>
+                    <div class="secondcolumn voilet"></div>
+                    <div class="secondcolumn voilet"></div>
+                    <div class="secondcolumn orange"></div>
+                    <div class="secondcolumn orange"></div>
+                    <div class="secondcolumn brown"></div>
+                </div>
+                <div class="boxsize">
+                    <div class="thirdcolumn1 green"></div>
+                    <div class="thirdcolumn1 green"></div>
+                    <div class="thirdcolumn1 voilet"></div>
+                    <div class="thirdcolumn1 voilet"></div>
+                    <div class="thirdcolumn1 orange"></div>
+                    <div class="thirdcolumn1 brown"></div>
+                </div>
+                <div class="boxsize">
+                    <div class="forthcolumn green"></div>
+                    <div class="forthcolumn green"></div>
+                    <div class="forthcolumn green"></div>
+                    <div class="forthcolumn voilet"></div>
+                    <div class="forthcolumn voilet"></div>
+                    <div class="forthcolumn brown"></div>
+
+                </div>
+
+                <div class="boxsize">
+                    <div class="fifthcolumn"></div>
+                    <div class="fifthcolumn"></div>
+                    <div class="fifthcolumn"></div>
+                    <div class="fifthcolumn"></div>
+                    <div class="fifthcolumn"></div>
+                    <div class="fifthcolumn brown"></div>
+
+                </div>
+
+                <div class="boxsize">
+                    <div class="sixthcolumn"></div>
+                    <div class="sixthcolumn"></div>
+                    <div class="sixthcolumn"></div>
+                    <div class="sixthcolumn"></div>
+                    <div class="sixthcolumn"></div>
+                    <div class="sixthcolumn"></div>
+                    <div class="sixthcolumn brown"></div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="inner2">
+            <div class="index2row1">
+                <div class="firstline"><div style="padding: 8px; color: white;">La</div></div>
+                <div class="firstline"></div>
+                <div class="firstline"></div>
+                <div class="firstline"></div>
+                <div class="firstline"></div>
+                <div class="firstline"></div>
+                <div class="firstline"></div>
+                <div class="firstline"></div>
+                <div class="firstline"></div>
+                <div class="firstline"></div>
+                <div class="firstline"></div>
+                <div class="firstline"></div>
+                <div class="firstline"></div>
+                <div class="firstline"></div>
+            </div>
+            <div class="index2row2">
+                <div class="secondline"></div>
+                <div class="secondline"></div>
+                <div class="secondline"></div>
+                <div class="secondline"></div>
+                <div class="secondline"></div>
+                <div class="secondline"></div>
+                <div class="secondline"><div style="padding: 8px;"><b>Am</b></div></div>
+                <div class="secondline"></div>
+                <div class="secondline"></div>
+                <div class="secondline"></div>
+                <div class="secondline"></div>
+                <div class="secondline"></div>
+                <div class="secondline"></div>
+                <div class="secondline"><div style="padding: 8px;"> <b>No</b></div></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
