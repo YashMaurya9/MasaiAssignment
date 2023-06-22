@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_gallery</title>
+    <style>
+        * {
+            margin: 1px;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            background-color: #3d415c;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .icon {
+            padding-right: 55px;
+            cursor: pointer;
+        }
+
+        #icons-parent {
+            justify-content: end;
+            padding-top: 12px;
+        }
+
+        img {
+            padding-top: 2px;
+            cursor: pointer;
+        }
+        #heading{
+            color: red;
+            text-align: center;
+            margin: 35px;
+            font-weight: 900;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 23px;
+        }
+        div>img{
+            border-radius: 17px;
+            height: 250px;
+            width: 250px;
+        }
+        #images{
+            width: 66%;
+            height: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div id="navbar">
+                <span><img src="https://www.masaischool.com/img/navbar/logo.svg" alt=""></span>
+                <div id="icons-parent"> 
+                    <span class="icon">HOME</span>
+                    <span class="icon">GALLERY</span>
+                    <span class="icon">ABOUT</span>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <div id="heading">
+        <div >PHOTO GALLERY</div>
+    </div>
+
+    <div id="images">
+        <div class="row">
+            <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+            <img src="https://th.bing.com/th/id/OIP.nnz8GjWGkwP0gZTYPGxsBQHaEp?pid=ImgDet&w=161&h=100&c=7" alt="">
+            <img src="https://cdn05.zipify.com/nvyhDJP8EPaTaaTDTayef0WSjMQ=/0x1:3340x3340/fit-in/590x0/39450d5931c142eb9f43191aa026c403/camera-photography-technology-reflection-122400.jpg" alt="">
+        </div>
+        <div class="row">
+            <img src="https://cdn05.zipify.com/nvyhDJP8EPaTaaTDTayef0WSjMQ=/0x1:3340x3340/fit-in/590x0/39450d5931c142eb9f43191aa026c403/camera-photography-technology-reflection-122400.jpg" alt="">
+            <img src="https://th.bing.com/th/id/OIP.nnz8GjWGkwP0gZTYPGxsBQHaEp?pid=ImgDet&w=161&h=100&c=7" alt="">
+            <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
