@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Keyboard</title>
+
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(12, 2fr);
+            width: 100%;
+        }
+
+        #container>div {
+            /* width: 70px; */
+            background-color: #2f3639;
+            color: #02bdd5;
+            height: 34px;
+            text-align: center;
+            margin: auto;
+            margin: 7px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        #container>div:nth-child(35) {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-end: 11;
+            grid-column-start: 13;
+        }
+
+        #container>div:nth-child(46) {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-end: 11;
+            grid-column-start: 13;
+        }
+
+        #container>div:nth-child(51) {
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-end: 5;
+            grid-column-start: 9;
+        }
+
+        body {
+            width: 100%;
+            height: 625px;
+            background-color: #02bdd5;
+        }
+
+        .parent {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 150px;
+        }
+
+        .child {
+            background-color: #262c2c;
+            border-radius: 12px;
+            padding: 25px;
+            width: 1100px;
+        }
+        p{
+            margin: 8px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div id="container">
+                <div><p>~</p></div>
+                <div><p>1</p></div>
+                <div><p>2</p></div>
+                <div><p>3</p></div>
+                <div><p>4</p></div>
+                <div><p>5</p></div>
+                <div><p>6</p></div>
+                <div><p>7</p></div>
+                <div><p>8</p></div>
+                <div><p>9</p></div>
+                <div><p>0</p></div>
+                <div><p>delete</p></div>
+                <div id="tab"><p>tab</p></div>
+                <div><P>Q</P></div>
+                <div><P>W</P></div>
+                <div><P>E</P></div>
+                <div><P>R</P></div>
+                <div><P>T</P></div>
+                <div><P>Y</P></div>
+                <div><P>U</P></div>
+                <div><P>I</P></div>
+                <div><P>O</P></div>
+                <div><P>P</P></div>
+                <div><P>\</P></div>
+                <div id="caps"><P>caps</P></div>
+                <div><P>A</P></div>
+                <div><p>S</p></div>
+                <div><P>D</P></div>
+                <div><P>F</P></div>
+                <div><P>G</P></div>
+                <div><P>H</P></div>
+                <div><P>J</P></div>
+                <div><P>K</P></div>
+                <div><P>L</P></div>
+                <div id="enter"><P>Enter</P></div>
+                <div><P>Shift</P></div>
+                <div><P>Z</P></div>
+                <div><P>X</P></div>
+                <div><P>C</P></div>
+                <div><P>V</P></div>
+                <div><P>B</P></div>
+                <div><P>N</P></div>
+                <div><P>M</P></div>
+                <div>
+                   <P> < </P> </div>
+                        <div><P>></P></div>
+                        <div id="shift"><P>Shift</P></div>
+                        <div><P>&#xf0ac;</P></div>
+                        <div><P>Control</P></div>
+                        <div><P>Option</P></div>
+                        <div><P>alt</P></div>
+                        <div id="space"><P>Space</P></div>
+                        <div><P>alt</P></div>
+                        <div><P>option</P></div>
+                        <div> <P>&larr;</P> </div>
+                        <div><P> &rarr;</P></div>
+                </div>
+            </div>
+
+
+            <!-- <div id="container">
+            <button>~</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>0</button>
+            <button>delete</button>
+            <button id="tab">tab</button>
+            <button>Q</button>
+            <button>W</button>
+            <button>E</button>
+            <button>R</button>
+            <button>T</button>
+            <button>Y</button>
+            <button>U</button>
+            <button>I</button>
+            <button>O</button>
+            <button>P</button>
+            <button>\</button>
+            <button id="caps">caps</button>
+            <button>A</button>
+            <button>S</button>
+            <button>D</button>
+            <button>F</button>
+            <button>G</button>
+            <button>H</button>
+            <button>J</button>
+            <button>K</button>
+            <button>L</button>
+            <button id="enter">Enter</button>
+            <button>Shift</button>
+            <button>Z</button>
+            <button>X</button>
+            <button>C</button>
+            <button>V</button>
+            <button>B</button>
+            <button>N</button>
+            <button>M</button>
+            <button>
+                < </button>
+                    <button>></button>
+                    <button id="shift">Shift</button>
+                    <button>&#xf0ac;</button>
+                    <button>Control</button>
+                    <button>Option</button>
+                    <button>alt</button>
+                    <button id="space">Space</button>
+                    <button>alt</button>
+                    <button>option</button>
+                    <button> &larr; </button>
+                    <button> &rarr;</button>
+        </div> -->
+        </div>
+</body>
+
+</html>
