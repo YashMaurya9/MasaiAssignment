@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Calculator Returns</title>
+    <style>
+        h1 {
+            color: teal;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .parent {
+            width: 250px;
+            height: 290px;
+            margin: auto;
+            padding: 35px;
+            margin-top: 60px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        #Display {
+            width: 90%;
+            margin: auto;
+            height: 45px;
+            background-color: #fcfef9;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+
+        p {
+            margin: 14.5px;
+        }
+
+        #black {
+            background-color: black;
+        }
+        #black:hover {
+            background-color: teal;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #red:hover {
+            background-color: teal;
+        }
+
+        #txtwhite {
+            color: white;
+        }
+
+        div>div {
+            margin: 3px;
+            font-weight: 900;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 7px;
+        }
+
+        div>div>div:hover {
+            cursor: pointer;
+            background-color: teal;
+      }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Masai Calculator</h1>
+    </div>
+
+    <div class="parent">
+        <div id="Display"></div>
+        <div class="container">
+            <div onclick="shownumber(1)">
+                <p>1</p>
+            </div>
+            <div onclick="shownumber(2)">
+                <p>2</p>
+            </div>
+            <div onclick="shownumber(3)">
+                <p>3</p>
+            </div>
+            <div id="black" onclick="showOperator('+')">
+                <p id="txtwhite">+</p>
+            </div>
+            <div onclick="shownumber(4)">
+                <p>4</p>
+            </div>
+            <div onclick="shownumber(5)">
+                <p>5</p>
+            </div>
+            <div onclick="shownumber(6)">
+                <p>6</p>
+            </div>
+            <div id="black" onclick="showOperator('-')">
+                <p id="txtwhite">-</p>
+            </div>
+            <div onclick="shownumber(7)">
+                <p>7</p>
+            </div>
+            <div onclick="shownumber(8)">
+                <p>8</p>
+            </div>
+            <div onclick="shownumber(9)">
+                <p>9</p>
+            </div>
+            <div id="black" onclick="showOperator('*')">
+                <p id="txtwhite">x</p>
+            </div>
+            <div id="red" onclick="clearDisplay()">
+                <p id="txtwhite">C</p>
+            </div>
+            <div onclick="shownumber(0)">
+                <p>0</p>
+            </div>
+            <div id="black" onclick="calculate()">
+                <p id="txtwhite">=</p>
+            </div>
+            <div id="black" onclick="showOperator('/')">
+                <p id="txtwhite">/</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code here
+
+        // Get the display element
+        const display = document.getElementById('Display');
+
+        // Store the current expression
+        let expression = '';
+
+        // Append a number to the expression
+
+        // function appendNumber(number) {
+        //     expression += number;
+        //     display.textContent = expression;
+        // }
+
+        function shownumber(number) {
+            expression += number;
+            display.textContent = expression;
+        }
+
+        // Append an operator to the expression
+
+        // function appendOperator(operator) {
+        //     expression += operator;
+        //     display.textContent = expression;
+        // }
+
+        function showOperator(operator) {
+            expression+=operator;
+            display.textContent=expression;
+        }
+
+        // Clear the display and expression
+        function clearDisplay() {
+            expression = '';
+            display.textContent = '';
+        }
+
+        // Calculate and display the result
+        function calculate() {
+            try {
+                const result = eval(expression);
+                display.textContent = result;
+                expression = '';
+            } catch (error) {
+                display.textContent = 'Error';
+            }
+        }
+    </script>
+</body>
+
+</html>
